@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Портфолио Анастасии Велюги — презентации, учебные материалы и оформление соцсетей." />
+    <title>Анастасия Велюга — дизайнер визуальных материалов</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell header__inner">
+        <a class="brand" href="#top">АНАСТАСИЯ ВЕЛЮГА</a>
+        <nav class="nav" aria-label="Основная навигация">
+          <a href="#services">УСЛУГИ</a><a href="#projects">РАБОТЫ</a><a href="#about">ОБО МНЕ</a><a href="#contacts">КОНТАКТЫ</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="shell hero">
+        <div class="hero__copy"><h1>Визуальные материалы,<br />которые объясняют.</h1><p>Презентации, учебные материалы и оформление соцсетей для экспертов и образовательных проектов.</p></div>
+        <img class="portrait" src="public/assets/portrait.png" alt="Анастасия Велюга" />
+      </section>
+
+      <section class="shell section" id="services">
+        <div class="rule"></div><h2>Задачи, с которых<br />можно начать</h2>
+        <div class="service-grid">
+          <article><h3>Презентации</h3><p>Для уроков, выступлений и коммерческих предложений.</p></article>
+          <article><h3>Учебные материалы</h3><p>Тетради, гайды и понятные материалы для курсов.</p></article>
+          <article><h3>Оформление соцсетей</h3><p>Карточки и серии для регулярного визуального контента.</p></article>
+        </div>
+      </section>
+
+      <section class="shell section" id="projects">
+        <div class="rule"></div><h2>Кейсы</h2>
+        <div class="case-grid">
+          <button class="case" data-case="eco" type="button"><span class="case__visual eco-preview"><img src="public/assets/eco-1.png" alt="" /><img src="public/assets/eco-2.png" alt="" /><img src="public/assets/eco-3.png" alt="" /><img src="public/assets/eco-4.png" alt="" /></span><span class="eyebrow">Презентация</span><strong>Презентация для<br />урока экологии</strong><small>8-слайдовая презентация для классного часа «Чистый город»: чистота, сортировка мусора и экологичные привычки.</small></button>
+          <button class="case" data-case="workbook" type="button"><span class="case__visual workbook-preview"><span class="sheet"><b>CONCERT READY</b><em>RULES<br />FOR THE SHOW</em><i></i><i></i><i></i></span><span class="sheet"><b>CONCERT READY</b><em>BACKSTAGE<br />CHECK</em><i></i><i></i><i></i></span></span><span class="eyebrow">Рабочие листы</span><strong>Рабочие листы по английскому языку</strong><small>Рабочая тетрадь о модальных глаголах в теме подготовки к концерту.</small></button>
+          <button class="case" data-case="social" type="button"><span class="case__visual social-preview"><img src="public/assets/social-1.png" alt="" /><img src="public/assets/social-2.png" alt="" /></span><span class="eyebrow">Карточки для соцсетей</span><strong>Карточки для соцсетей<br />репетитора по математике</strong><small>Серия карточек для продвижения занятий: реклама репетитора и понятный список услуг.</small></button>
+        </div>
+      </section>
+
+      <section class="shell section about" id="about"><div><h2>Дизайн, в котором<br />не нужно разбираться</h2><p>Педагогический опыт позволяет понятно структурировать информацию. Навыки работы в PowerPoint, Figma, Canva и LibreOffice помогают создавать удобство и красоту.</p></div></section>
+    </main>
+
+    <section class="contact" id="contacts"><div class="shell"><h2>Контакты</h2><div class="contact__links"><a href="https://t.me/nastivel" target="_blank" rel="noreferrer">Telegram</a><button id="email-button" type="button">velnast@gmail.com</button></div></div></section>
+    <footer class="site-footer"><div class="shell">АНАСТАСИЯ ВЕЛЮГА</div></footer>
+    <div class="toast" id="toast" role="status" aria-live="polite">Почта скопирована</div>
+
+    <dialog class="modal" id="case-modal" aria-label="Просмотр кейса"><button class="modal__close" type="button" aria-label="Закрыть">×</button><div class="modal__content" id="modal-content"></div></dialog>
+    <script src="script.js"></script>
+  </body>
+</html>
