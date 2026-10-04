@@ -9,6 +9,8 @@
 .modal { overflow-y: auto; }
 .modal--social { background: #d9d4cb; }
 .modal__content img { border-radius: 12px; }
+.nav a { font-size: 16px; line-height: 20px; }
+.contact__links a, .contact__links button { font-family: inherit; font-size: 16px; line-height: 24px; }
 @media (max-width: 767px) {
   .case__visual { padding: 18px; }
   .workbook-preview { gap: 8px; }
