@@ -11,6 +11,7 @@
 .modal__content img { border-radius: 12px; }
 .nav a { font-size: 14px; line-height: 18px; }
 .contact__links a, .contact__links button { font-family: inherit; font-size: 16px; line-height: 24px; }
+.portrait { object-fit: contain; object-position: center bottom; }
 @media (max-width: 767px) {
   .case__visual { padding: 18px; }
   .workbook-preview { gap: 8px; }
