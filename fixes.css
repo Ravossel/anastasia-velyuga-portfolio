@@ -1,6 +1,7 @@
 /* Post-launch corrections: preserve every preview and stabilise narrow layouts. */
 .eco-preview { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: repeat(2, minmax(0, 1fr)); }
-.eco-preview img { object-fit: contain; background: #fff; }
+.eco-preview { background: var(--bg); }
+.eco-preview img { object-fit: contain; background: var(--bg); border-color: var(--bg); }
 .workbook-preview { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .workbook-preview img { display: block; min-width: 0; width: 100%; height: 100%; object-fit: contain; border-radius: 10px; box-shadow: 0 3px 8px rgba(0,0,0,.11); }
 .social-preview { grid-template-columns: repeat(2, minmax(0, 1fr)); }
