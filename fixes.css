@@ -25,7 +25,7 @@
 .service-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
 .service-grid article { display: flex; flex-direction: column; min-height: 0; padding: 22px; }
 .service-grid p, .case small { margin: 0; font-size: 19px; line-height: 1.4; }
-.service-grid p { margin-top: auto; padding-top: 22px; }
+.service-grid p { margin-top: 22px; }
 .workbook-preview { background: rgba(178, 79, 56, .14); }
 .eyebrow { margin-top: 18px; font-size: 14px; letter-spacing: .02em; }
 .case strong { margin-top: 10px; }
