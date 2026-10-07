@@ -23,15 +23,15 @@
 .rule { display: none; }
 .service-grid, .case-grid { margin-top: 0; }
 .service-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
-.service-grid article { display: grid; align-content: start; gap: 12px; min-height: 190px; padding: 22px; }
-.service-grid p, .case small { margin: 0; font-size: 16px; line-height: 1.45; }
-.section-note { max-width: 670px; margin: 24px 0 0; color: var(--muted); font-size: 16px; line-height: 1.45; }
+.service-grid article { display: flex; flex-direction: column; min-height: 0; padding: 22px; }
+.service-grid p, .case small { margin: 0; font-size: 19px; line-height: 1.4; }
+.service-grid p { margin-top: auto; padding-top: 22px; }
 .workbook-preview { background: rgba(178, 79, 56, .14); }
 .eyebrow { margin-top: 18px; font-size: 14px; letter-spacing: .02em; }
 .case strong { margin-top: 10px; }
 .about { justify-content: flex-start; }
 .about__copy { max-width: 850px; }
-.about p { max-width: 760px; margin-top: 18px; font-size: 18px; line-height: 1.5; }
+.about p { max-width: 760px; margin-top: 18px; font-size: 19px; line-height: 1.5; }
 @media (max-width: 767px) {
   .hero { display: flex; gap: 32px; padding-block: 52px; }
   .hero__copy { padding-bottom: 0; }
@@ -42,8 +42,9 @@
   .section { padding-block: 58px; }
   .section h2 { margin-bottom: 24px; }
   .service-grid { grid-template-columns: 1fr; gap: 12px; }
-  .service-grid article { min-height: auto; padding: 20px; }
+  .service-grid article { min-height: 190px; padding: 20px; }
+  .service-grid p, .case small { font-size: 18px; }
   .case__visual { padding: 18px; }
   .workbook-preview { gap: 8px; }
-  .about p { font-size: 17px; }
+  .about p { font-size: 18px; }
 }
