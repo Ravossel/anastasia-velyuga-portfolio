@@ -26,7 +26,7 @@
 .service-grid article { display: grid; align-content: start; gap: 12px; min-height: 190px; padding: 22px; }
 .service-grid p, .case small { margin: 0; font-size: 16px; line-height: 1.45; }
 .section-note { max-width: 670px; margin: 24px 0 0; color: var(--muted); font-size: 16px; line-height: 1.45; }
-.workbook-preview { background: rgba(178, 79, 56, .14); }
+.workbook-preview { background: #e5f0f0; }
 .eyebrow { margin-top: 18px; font-size: 14px; letter-spacing: .02em; }
 .case strong { margin-top: 10px; }
 .about { justify-content: flex-start; }
