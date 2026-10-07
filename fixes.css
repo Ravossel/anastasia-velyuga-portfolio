@@ -11,13 +11,13 @@
 .modal__content img { border-radius: 12px; }
 .nav a { font-size: 14px; line-height: 18px; }
 .contact__links a, .contact__links button { font-family: inherit; font-size: 16px; line-height: 24px; }
-.hero { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(320px, .8fr); align-items: end; gap: clamp(32px, 7vw, 112px); padding-block: clamp(56px, 8vw, 112px); }
-.hero__copy { max-width: 720px; padding-bottom: 20px; }
-.hero__eyebrow { margin: 0 0 20px; color: var(--accent); font-size: 15px; font-weight: 500; line-height: 1.35; }
-.hero h1 { font-size: clamp(46px, 5vw, 72px); }
-.hero p:not(.hero__eyebrow) { max-width: 570px; margin-top: 28px; font-size: 20px; line-height: 1.4; }
-.hero__portrait { display: grid; min-height: 410px; place-items: end center; overflow: hidden; background: rgba(178, 79, 56, .12); }
-.portrait { width: min(100%, 430px); height: 430px; object-fit: contain; object-position: center bottom; }
+.hero { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 440px); align-items: center; gap: 0; padding-block: clamp(64px, 7vw, 104px); }
+.hero__copy { position: relative; z-index: 2; max-width: 900px; padding-bottom: 0; }
+.hero__eyebrow { margin: 0 0 18px; color: var(--muted); font-size: 15px; font-weight: 500; line-height: 1.35; }
+.hero h1 { max-width: 880px; font-size: clamp(58px, 7vw, 104px); line-height: .9; letter-spacing: -.065em; }
+.hero p:not(.hero__eyebrow) { max-width: 500px; margin-top: 30px; font-size: 19px; line-height: 1.4; }
+.hero__portrait { position: relative; z-index: 1; display: grid; min-height: 470px; margin-left: -112px; place-items: end center; overflow: hidden; background: #ebe9e2; }
+.portrait { width: min(100%, 450px); height: 470px; object-fit: contain; object-position: center bottom; }
 .section { padding-block: 88px; }
 .section h2 { margin-bottom: 30px; }
 .rule { display: none; }
@@ -37,7 +37,7 @@
   .hero__copy { padding-bottom: 0; }
   .hero h1 { font-size: clamp(42px, 12vw, 58px); }
   .hero p:not(.hero__eyebrow) { margin-top: 22px; font-size: 18px; }
-  .hero__portrait { width: 100%; min-height: 370px; }
+  .hero__portrait { width: 100%; min-height: 370px; margin-left: 0; background: #ebe9e2; }
   .portrait { width: min(100%, 380px); height: 370px; }
   .section { padding-block: 58px; }
   .section h2 { margin-bottom: 24px; }
