@@ -3,7 +3,7 @@
 .eco-preview { background: rgba(178, 79, 56, .14); }
 .eco-preview img { object-fit: contain; background: transparent; border: 0; }
 .workbook-preview { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: minmax(0, 1fr); align-items: stretch; gap: 12px; }
-.workbook-preview img { display: block; align-self: stretch; min-width: 0; width: 100%; height: 100%; object-fit: contain; border-radius: 10px; box-shadow: 0 3px 8px rgba(0,0,0,.11); }
+.workbook-preview img { display: block; align-self: stretch; min-width: 0; width: 100%; height: 100%; object-fit: contain; background: #e5f0f0; border-radius: 10px; box-shadow: 0 3px 8px rgba(0,0,0,.11); }
 .social-preview { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .social-preview img { object-fit: contain; border: 0; }
 .modal { overflow-y: auto; }
@@ -26,7 +26,7 @@
 .service-grid article { display: grid; align-content: start; gap: 12px; min-height: 190px; padding: 22px; }
 .service-grid p, .case small { margin: 0; font-size: 16px; line-height: 1.45; }
 .section-note { max-width: 670px; margin: 24px 0 0; color: var(--muted); font-size: 16px; line-height: 1.45; }
-.workbook-preview { background: #e5f0f0; }
+.workbook-preview { background: rgba(178, 79, 56, .14); }
 .eyebrow { margin-top: 18px; font-size: 14px; letter-spacing: .02em; }
 .case strong { margin-top: 10px; }
 .about { justify-content: flex-start; }
