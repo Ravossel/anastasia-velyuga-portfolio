@@ -11,8 +11,39 @@
 .modal__content img { border-radius: 12px; }
 .nav a { font-size: 14px; line-height: 18px; }
 .contact__links a, .contact__links button { font-family: inherit; font-size: 16px; line-height: 24px; }
-.portrait { object-fit: contain; object-position: center bottom; }
+.hero { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(320px, .8fr); align-items: end; gap: clamp(32px, 7vw, 112px); padding-block: clamp(56px, 8vw, 112px); }
+.hero__copy { max-width: 720px; padding-bottom: 20px; }
+.hero__eyebrow { margin: 0 0 20px; color: var(--accent); font-size: 15px; font-weight: 500; line-height: 1.35; }
+.hero h1 { font-size: clamp(46px, 5vw, 72px); }
+.hero p:not(.hero__eyebrow) { max-width: 570px; margin-top: 28px; font-size: 20px; line-height: 1.4; }
+.hero__portrait { display: grid; min-height: 410px; place-items: end center; overflow: hidden; background: rgba(178, 79, 56, .12); }
+.portrait { width: min(100%, 430px); height: 430px; object-fit: contain; object-position: center bottom; }
+.section { padding-block: 88px; }
+.section h2 { margin-bottom: 30px; }
+.rule { display: none; }
+.service-grid, .case-grid { margin-top: 0; }
+.service-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
+.service-grid article { display: grid; align-content: start; gap: 12px; min-height: 190px; padding: 22px; }
+.service-grid p, .case small { margin: 0; font-size: 16px; line-height: 1.45; }
+.section-note { max-width: 670px; margin: 24px 0 0; color: var(--muted); font-size: 16px; line-height: 1.45; }
+.workbook-preview { background: rgba(178, 79, 56, .14); }
+.eyebrow { margin-top: 18px; font-size: 14px; letter-spacing: .02em; }
+.case strong { margin-top: 10px; }
+.about { justify-content: flex-start; }
+.about__copy { max-width: 850px; }
+.about p { max-width: 760px; margin-top: 18px; font-size: 18px; line-height: 1.5; }
 @media (max-width: 767px) {
+  .hero { display: flex; gap: 32px; padding-block: 52px; }
+  .hero__copy { padding-bottom: 0; }
+  .hero h1 { font-size: clamp(42px, 12vw, 58px); }
+  .hero p:not(.hero__eyebrow) { margin-top: 22px; font-size: 18px; }
+  .hero__portrait { width: 100%; min-height: 370px; }
+  .portrait { width: min(100%, 380px); height: 370px; }
+  .section { padding-block: 58px; }
+  .section h2 { margin-bottom: 24px; }
+  .service-grid { grid-template-columns: 1fr; gap: 12px; }
+  .service-grid article { min-height: auto; padding: 20px; }
   .case__visual { padding: 18px; }
   .workbook-preview { gap: 8px; }
+  .about p { font-size: 17px; }
 }
