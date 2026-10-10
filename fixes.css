@@ -23,6 +23,12 @@
 .section h2 { margin-bottom: 30px; }
 .rule { display: none; }
 .service-grid, .case-grid { margin-top: 0; }
+.case-grid { align-items: stretch; }
+.case { display: flex; flex-direction: column; height: 100%; }
+.case__visual { flex: 0 0 340px; }
+.case .eyebrow { min-height: 20px; }
+.case strong { min-height: 62px; }
+.case small { margin-top: auto; }
 .service-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; }
 .service-grid article { display: flex; flex-direction: column; min-height: 0; padding: 22px; }
 .service-grid p, .case small { margin: 0; font-size: 19px; line-height: 1.4; }
@@ -49,6 +55,8 @@
   .service-grid article { min-height: 190px; padding: 20px; }
   .service-grid p, .case small { font-size: 18px; }
   .case__visual { padding: 18px; }
+  .case__visual { flex-basis: 280px; }
+  .case strong { min-height: 56px; }
   .workbook-preview { gap: 8px; }
   .about p { font-size: 18px; }
 }
