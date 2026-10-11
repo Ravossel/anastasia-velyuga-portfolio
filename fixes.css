@@ -65,11 +65,14 @@
 .contact.section .contact__telegram, .contact.section .contact__email { border: 1px solid var(--ink); background: var(--light) !important; color: var(--ink) !important; }
 .contact.section .contact-form label { color: var(--ink); }
 .contact.section .contact-form input, .contact.section .contact-form select, .contact.section .contact-form textarea { border-color: var(--line); background: var(--light); color: var(--ink); }
+.contact.section .contact-form input, .contact.section .contact-form select, .contact.section .contact-form textarea { font-family: inherit; font-size: 19px; font-weight: 400; line-height: 1.4; }
+.contact.section .contact-form input[type="file"] { padding: 8px 10px; }
+.contact.section .contact-form input[type="file"]::file-selector-button { margin-right: 12px; padding: 8px 12px; border: 1px solid var(--ink); border-radius: 7px; background: var(--light); color: var(--ink); font: inherit; font-size: 19px; line-height: 1.4; cursor: pointer; }
 .contact.section .contact-form input::placeholder, .contact.section .contact-form textarea::placeholder { color: var(--muted); }
 .contact.section .contact-form option { background: var(--bg); color: var(--ink); }
 .contact.section .contact-form input:focus, .contact.section .contact-form select:focus, .contact.section .contact-form textarea:focus { border-color: var(--ink); box-shadow: 0 0 0 2px rgba(23,23,21,.1); }
 .contact-form__optional { color: var(--muted); font-weight: 400; }
-.contact.section .contact-form__submit { background: var(--ink); color: var(--bg); }
+.contact.section .contact-form__submit { display: inline-flex; align-items: center; padding: 13px 20px; border: 1px solid var(--ink); background: var(--light); color: var(--ink); font-size: 18px; line-height: 24px; }
 @media (max-width: 767px) {
   .hero { display: flex; gap: 32px; padding-block: 52px; }
   .hero__copy { padding-bottom: 0; }
@@ -88,5 +91,5 @@
   .about p { font-size: 18px; }
   .contact__content { grid-template-columns: 1fr; gap: 44px; margin-top: 24px; }
   .contact__copy p { font-size: 18px; }
-  .contact-form label, .contact-form input, .contact-form select, .contact-form textarea { font-size: 18px; }
+  .contact-form label, .contact-form input, .contact-form select, .contact-form textarea, .contact.section .contact-form input[type="file"]::file-selector-button { font-size: 18px; }
 }
