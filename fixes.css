@@ -61,6 +61,16 @@
 .contact-form__submit { justify-self: start; padding: 14px 22px; border: 0; border-radius: 999px; background: var(--bg); color: var(--ink); font: 500 18px/24px inherit; cursor: pointer; }
 .contact-form__submit:hover { opacity: .9; }
 .contact-form__honeypot { position: absolute; left: -9999px; }
+.contact.section { background: transparent; color: var(--ink); }
+.contact.section .contact__copy p { color: var(--muted); }
+.contact.section .contact__telegram, .contact.section .contact__email { border: 1px solid var(--ink); background: transparent !important; color: var(--ink) !important; }
+.contact.section .contact-form label { color: var(--ink); }
+.contact.section .contact-form input, .contact.section .contact-form select, .contact.section .contact-form textarea { border-color: var(--line); background: transparent; color: var(--ink); }
+.contact.section .contact-form input::placeholder, .contact.section .contact-form textarea::placeholder { color: var(--muted); }
+.contact.section .contact-form option { background: var(--bg); color: var(--ink); }
+.contact.section .contact-form input:focus, .contact.section .contact-form select:focus, .contact.section .contact-form textarea:focus { border-color: var(--ink); box-shadow: 0 0 0 2px rgba(23,23,21,.1); }
+.contact-form__optional { color: var(--muted); font-weight: 400; }
+.contact.section .contact-form__submit { background: var(--ink); color: var(--bg); }
 @media (max-width: 767px) {
   .hero { display: flex; gap: 32px; padding-block: 52px; }
   .hero__copy { padding-bottom: 0; }
