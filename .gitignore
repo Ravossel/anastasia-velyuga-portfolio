@@ -7,5 +7,7 @@ dist/
 !*.example
 .codex/
 assets/
+!public/assets/
+!public/assets/**
 output/
 tmp/

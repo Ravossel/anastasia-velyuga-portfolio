@@ -6,6 +6,8 @@
 .workbook-preview img { display: block; min-width: 0; width: 100%; height: 100%; object-fit: contain; background: #e5f0f0; border-radius: 10px; box-shadow: 0 3px 8px rgba(0,0,0,.11); }
 .social-preview { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .social-preview img { display: block; width: 100%; height: 100%; object-fit: contain; border: 0; }
+.modal--social .modal__content { width: min(100%, 560px); margin-inline: auto; gap: 24px; }
+.modal--social .modal__content img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: contain; }
 .modal { overflow-y: auto; }
 .modal--social { background: #d9d4cb; }
 .modal__content img { border-radius: 12px; }
@@ -95,6 +97,7 @@
   .case__visual { padding: clamp(12px, 4vw, 18px); }
   .case strong { min-height: 56px; }
   .workbook-preview { gap: 8px; }
+  .modal--social .modal__content { width: 100%; gap: 16px; }
   .about p { font-size: 18px; }
   .contact__content { grid-template-columns: 1fr; gap: 44px; margin-top: 24px; }
   .contact__copy p { font-size: 18px; }
