@@ -76,7 +76,7 @@
 .contact.section .contact-form option { background: var(--bg); color: var(--ink); }
 .contact.section .contact-form input:focus, .contact.section .contact-form select:focus, .contact.section .contact-form textarea:focus { border-color: var(--ink); box-shadow: 0 0 0 2px rgba(23,23,21,.1); }
 .contact-form__optional { color: var(--muted); font-weight: 400; }
-.contact.section .contact-form__submit { display: inline-flex; align-items: center; padding: 13px 20px; border: 1px solid var(--ink); background: var(--light); color: var(--ink); font-size: 18px; line-height: 24px; }
+.contact.section .contact-form__submit { display: inline-flex; align-items: center; padding: 13px 20px; border: 1px solid var(--ink); background: var(--ink); color: var(--light); font-size: 18px; line-height: 24px; }
 .contact.section .contact__telegram, .contact.section .contact__email, .contact.section .contact-form__submit { transition: background-color .18s ease, border-color .18s ease, color .18s ease; }
 .contact.section .contact__telegram:hover, .contact.section .contact__telegram:focus-visible, .contact.section .contact__email:hover, .contact.section .contact__email:focus-visible, .contact.section .contact-form__submit:hover, .contact.section .contact-form__submit:focus-visible { border-color: var(--accent); background: var(--accent) !important; color: var(--light) !important; opacity: 1; }
 .contact.section .contact__telegram:hover img, .contact.section .contact__telegram:focus-visible img, .contact.section .contact__email:hover img, .contact.section .contact__email:focus-visible img { filter: invert(1); }
