@@ -78,6 +78,14 @@
 .contact.section .contact-form option { background: var(--bg); color: var(--ink); }
 .contact.section .contact-form input:focus, .contact.section .contact-form select:focus, .contact.section .contact-form textarea:focus { border-color: var(--ink); box-shadow: 0 0 0 2px rgba(23,23,21,.1); }
 .contact-form__optional { color: var(--muted); font-weight: 400; }
+.contact-form__files { display: grid; gap: 8px; }
+.contact-form__hint { margin: 0; color: var(--muted); font-size: 19px; line-height: 1.4; }
+.contact-form__file-list { display: grid; gap: 8px; margin: 4px 0 0; padding: 0; list-style: none; }
+.contact-form__file-list[hidden] { display: none; }
+.contact-form__file-list li { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--light); font-size: 19px; line-height: 1.4; }
+.contact-form__file-name { min-width: 0; overflow-wrap: anywhere; }
+.contact-form__file-remove { flex: 0 0 auto; width: 32px; height: 32px; padding: 0; border: 1px solid var(--ink); border-radius: 50%; background: var(--light); color: var(--ink); font: 400 25px/28px inherit; cursor: pointer; transition: background-color .18s ease, border-color .18s ease, color .18s ease; }
+.contact-form__file-remove:hover, .contact-form__file-remove:focus-visible { border-color: var(--accent); background: var(--accent); color: var(--light); }
 .contact.section .contact-form__submit { display: inline-flex; align-items: center; padding: 13px 20px; border: 1px solid var(--ink); background: var(--ink); color: var(--light); font-size: 18px; line-height: 24px; }
 .contact.section .contact__telegram, .contact.section .contact__email, .contact.section .contact-form__submit { transition: background-color .18s ease, border-color .18s ease, color .18s ease; }
 .contact.section .contact__telegram:hover, .contact.section .contact__telegram:focus-visible, .contact.section .contact__email:hover, .contact.section .contact__email:focus-visible, .contact.section .contact-form__submit:hover, .contact.section .contact-form__submit:focus-visible { border-color: var(--accent); background: var(--accent) !important; color: var(--light) !important; opacity: 1; }
@@ -102,4 +110,5 @@
   .contact__content { grid-template-columns: 1fr; gap: 44px; margin-top: 24px; }
   .contact__copy p { font-size: 18px; }
   .contact-form label, .contact-form input, .contact-form select, .contact-form textarea, .contact.section .contact-form input[type="file"]::file-selector-button { font-size: 18px; }
+  .contact-form__hint, .contact-form__file-list li { font-size: 18px; }
 }

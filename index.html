@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="fixes.css?v=33" />
+    <link rel="stylesheet" href="fixes.css?v=34" />
   </head>
   <body>
     <header class="site-header">
@@ -67,7 +67,11 @@
             </div>
             <label>Что вас интересует?<input name="Тема" type="text" placeholder="Например: презентация для урока" required /></label>
             <label>Сообщение<textarea name="Сообщение" rows="5" placeholder="Коротко расскажите о задаче" required></textarea></label>
-            <label>Прикрепить файл <span class="contact-form__optional">(необязательно, до 10 МБ)</span><input name="Вложение" type="file" accept=".pdf,.doc,.docx,.ppt,.pptx,.png,.jpg,.jpeg,.webp" /></label>
+            <div class="contact-form__files">
+              <label for="file-input">Прикрепить файлы <span class="contact-form__optional">(необязательно)</span><input id="file-input" name="attachment" type="file" multiple accept=".pdf,.doc,.docx,.ppt,.pptx,.png,.jpg,.jpeg,.webp" aria-describedby="file-hint" /></label>
+              <p class="contact-form__hint" id="file-hint">Можно выбрать несколько файлов. Общий размер — до 10 МБ.</p>
+              <ul class="contact-form__file-list" id="file-list" aria-live="polite" hidden></ul>
+            </div>
             <button class="contact-form__submit" type="submit">Отправить сообщение</button>
           </form>
           <div class="contact__links"><a class="contact__telegram" href="https://t.me/nastivel" target="_blank" rel="noreferrer"><img src="public/assets/telegram-icon.png" alt="" aria-hidden="true" />Написать в Telegram</a><button class="contact__email" id="email-button" type="button"><img src="public/assets/email-icon.png" alt="" aria-hidden="true" />Электронная почта</button></div>
@@ -79,6 +83,6 @@
     <div class="toast" id="toast" role="status" aria-live="polite">Почта скопирована</div>
 
     <dialog class="modal" id="case-modal" aria-label="Просмотр кейса"><button class="modal__close" type="button" aria-label="Закрыть">×</button><div class="modal__content" id="modal-content"></div></dialog>
-    <script src="script.js?v=3"></script>
+    <script src="script.js?v=4"></script>
   </body>
 </html>
