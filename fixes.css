@@ -12,6 +12,8 @@
 .modal--social { background: #d9d4cb; }
 .modal__content img { border-radius: 12px; }
 body { font-family: "Manrope", Arial, sans-serif; }
+.site-header { position: sticky; top: 0; z-index: 10; }
+section[id] { scroll-margin-top: 86px; }
 .nav a { font-size: 16px; line-height: 20px; }
 .nav a { transition: color .18s ease; }
 .nav a:hover, .nav a:focus-visible { color: var(--accent); }
@@ -100,6 +102,7 @@ body { font-family: "Manrope", Arial, sans-serif; }
 .contact.section .contact__telegram:hover, .contact.section .contact__telegram:focus-visible, .contact.section .contact__email:hover, .contact.section .contact__email:focus-visible, .contact.section .contact-form__submit:hover, .contact.section .contact-form__submit:focus-visible { border-color: var(--accent); background: var(--accent) !important; color: var(--light) !important; opacity: 1; }
 .contact.section .contact__telegram:hover img, .contact.section .contact__telegram:focus-visible img, .contact.section .contact__email:hover img, .contact.section .contact__email:focus-visible img { filter: invert(1); }
 @media (max-width: 767px) {
+  section[id] { scroll-margin-top: 124px; }
   .hero { display: flex; gap: 32px; padding-block: 52px; }
   .hero__copy { padding-bottom: 0; }
   .hero h1 { font-size: clamp(42px, 12vw, 58px); }
