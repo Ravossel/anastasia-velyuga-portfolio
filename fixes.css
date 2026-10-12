@@ -50,7 +50,8 @@
 .about p { max-width: 760px; margin-top: 18px; font-size: 19px; line-height: 1.5; }
 .contact__telegram, .contact__email { display: inline-flex !important; align-items: center; gap: 10px; padding: 13px 20px !important; border-radius: 999px !important; background: var(--bg) !important; color: var(--ink) !important; font-size: 18px !important; line-height: 24px !important; text-decoration: none; }
 .contact__telegram img, .contact__email img { width: 22px; height: 22px; object-fit: contain; filter: none; }
-.contact__links { gap: 14px; }
+.contact__links { width: 264px; gap: 14px; }
+.contact__links a, .contact__links button { width: 100% !important; justify-content: center; }
 .contact__content { display: grid; grid-template-columns: minmax(0, 760px); gap: 52px; margin-top: 30px; align-items: start; }
 .contact__copy p { max-width: 380px; margin: 0; color: var(--bg); font-size: 19px; line-height: 1.5; }
 .contact-form { display: grid; gap: 20px; }
