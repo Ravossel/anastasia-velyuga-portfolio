@@ -11,6 +11,7 @@
 .modal { overflow-y: auto; }
 .modal--social { background: #d9d4cb; }
 .modal__content img { border-radius: 12px; }
+body { font-family: "Manrope", Arial, sans-serif; }
 .nav a { font-size: 16px; line-height: 20px; }
 .nav a { transition: color .18s ease; }
 .nav a:hover, .nav a:focus-visible { color: var(--accent); }
