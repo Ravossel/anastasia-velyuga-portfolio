@@ -51,6 +51,11 @@
 .contact__telegram img, .contact__email img { width: 22px; height: 22px; object-fit: contain; filter: none; }
 .contact__links { width: 264px; gap: 14px; }
 .contact__links a, .contact__links button { width: 100% !important; justify-content: center; }
+.footer__inner { display: grid; gap: 32px; }
+.site-footer .contact__links { margin: 0; }
+.site-footer .contact__telegram, .site-footer .contact__email { border: 1px solid var(--light); background: var(--light) !important; color: var(--ink) !important; transition: background-color .18s ease, border-color .18s ease, color .18s ease; }
+.site-footer .contact__telegram:hover, .site-footer .contact__telegram:focus-visible, .site-footer .contact__email:hover, .site-footer .contact__email:focus-visible { border-color: var(--accent); background: var(--accent) !important; color: var(--light) !important; }
+.site-footer .contact__telegram:hover img, .site-footer .contact__telegram:focus-visible img, .site-footer .contact__email:hover img, .site-footer .contact__email:focus-visible img { filter: invert(1); }
 .contact__content { display: grid; grid-template-columns: minmax(0, 760px); gap: 52px; margin-top: 30px; align-items: start; }
 .contact__copy p { max-width: 380px; margin: 0; color: var(--bg); font-size: 19px; line-height: 1.5; }
 .contact-form { display: grid; gap: 20px; }
