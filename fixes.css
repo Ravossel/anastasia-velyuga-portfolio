@@ -69,6 +69,7 @@
 .contact.section .contact__telegram, .contact.section .contact__email { border: 1px solid var(--ink); background: var(--light) !important; color: var(--ink) !important; }
 .contact.section .contact-form label { color: var(--ink); }
 .contact.section .contact-form input, .contact.section .contact-form select, .contact.section .contact-form textarea { border-color: var(--line); background: var(--light); color: var(--ink); }
+.contact.section .contact-form select { appearance: none; padding-right: 52px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='m1 1 5 5 5-5' fill='none' stroke='%23171715' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.8'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 20px center; background-size: 12px 8px; }
 .contact.section .contact-form input, .contact.section .contact-form select, .contact.section .contact-form textarea { font-family: inherit; font-size: 19px; font-weight: 400; line-height: 1.4; }
 .contact.section .contact-form input[type="file"] { padding: 8px 10px; }
 .contact.section .contact-form input[type="file"]::file-selector-button { margin-right: 12px; padding: 8px 12px; border: 1px solid var(--ink); border-radius: 7px; background: var(--light); color: var(--ink); font: inherit; font-size: 19px; line-height: 1.4; cursor: pointer; }
