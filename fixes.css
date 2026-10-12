@@ -84,7 +84,7 @@
 .contact-form__file-list[hidden] { display: none; }
 .contact-form__file-list li { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--light); font-size: 19px; line-height: 1.4; }
 .contact-form__file-name { min-width: 0; overflow-wrap: anywhere; }
-.contact-form__file-remove { flex: 0 0 auto; width: 32px; height: 32px; padding: 0; border: 1px solid var(--ink); border-radius: 50%; background: var(--light); color: var(--ink); font: 400 25px/28px inherit; cursor: pointer; transition: background-color .18s ease, border-color .18s ease, color .18s ease; }
+.contact-form__file-remove { display: grid; flex: 0 0 auto; place-items: center; width: 36px; height: 36px; padding: 0; border: 1px solid var(--ink); border-radius: 50%; background: var(--light); color: var(--ink); font-family: inherit; font-size: 30px; font-weight: 400; line-height: 1; cursor: pointer; transition: background-color .18s ease, border-color .18s ease, color .18s ease; }
 .contact-form__file-remove:hover, .contact-form__file-remove:focus-visible { border-color: var(--accent); background: var(--accent); color: var(--light); }
 .contact.section .contact-form__submit { display: inline-flex; align-items: center; padding: 13px 20px; border: 1px solid var(--ink); background: var(--ink); color: var(--light); font-size: 18px; line-height: 24px; }
 .contact.section .contact__telegram, .contact.section .contact__email, .contact.section .contact-form__submit { transition: background-color .18s ease, border-color .18s ease, color .18s ease; }
