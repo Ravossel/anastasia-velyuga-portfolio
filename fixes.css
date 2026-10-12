@@ -58,6 +58,7 @@ section[id] { scroll-margin-top: 86px; }
 .contact__links a, .contact__links button { width: 100% !important; justify-content: center; }
 .footer__inner { display: grid; gap: 32px; }
 .site-footer, .site-footer .contact__telegram, .site-footer .contact__email { font-family: "Manrope", Arial, sans-serif !important; }
+.site-footer .contact__telegram, .site-footer .contact__email { font-weight: 400 !important; }
 .site-footer .contact__links { width: 232px; margin: 0; gap: 10px; }
 .site-footer .contact__telegram, .site-footer .contact__email { padding: 10px 16px !important; border: 1px solid var(--light); background: var(--light) !important; color: var(--ink) !important; font-size: 16px !important; line-height: 22px !important; transition: background-color .18s ease, border-color .18s ease, color .18s ease; }
 .site-footer .contact__telegram img, .site-footer .contact__email img { width: 20px; height: 20px; }
