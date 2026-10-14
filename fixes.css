@@ -66,43 +66,12 @@ section[id] { scroll-margin-top: 86px; }
 .site-footer .contact__telegram:hover img, .site-footer .contact__telegram:focus-visible img, .site-footer .contact__email:hover img, .site-footer .contact__email:focus-visible img { filter: invert(1); }
 .contact__content { display: grid; grid-template-columns: minmax(0, 760px); gap: 52px; margin-top: 30px; align-items: start; }
 .contact__copy p { max-width: 380px; margin: 0; color: var(--bg); font-size: 19px; line-height: 1.5; }
-.contact-form { display: grid; gap: 20px; }
-.contact-form label { display: grid; gap: 10px; color: var(--bg); font-size: 19px; line-height: 1.4; }
-.contact-form input, .contact-form select, .contact-form textarea { width: 100%; padding: 14px 16px; border: 1px solid rgba(244,241,234,.58); border-radius: 10px; outline: 0; background: transparent; color: var(--bg); font: 400 19px/1.4 inherit; resize: vertical; }
-.contact-form input::placeholder, .contact-form textarea::placeholder { color: rgba(244,241,234,.58); }
-.contact-form select { appearance: auto; }
-.contact-form option { background: var(--ink); color: var(--bg); }
-.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { border-color: var(--bg); box-shadow: 0 0 0 2px rgba(244,241,234,.18); }
-.contact-form__row { display: grid; grid-template-columns: 1fr; gap: 20px; }
-.contact-form__submit { justify-self: start; padding: 14px 22px; border: 0; border-radius: 999px; background: var(--bg); color: var(--ink); font: 500 18px/24px inherit; cursor: pointer; }
-.contact-form__submit:hover { opacity: .9; }
-.contact-form__honeypot { position: absolute; left: -9999px; }
 .contact.section { background: transparent; color: var(--ink); }
 .contact.section .contact__copy p { color: var(--muted); }
 .contact.section .contact__telegram, .contact.section .contact__email { border: 1px solid var(--ink); background: var(--light) !important; color: var(--ink) !important; }
-.contact.section .contact-form label { color: var(--ink); }
-.contact.section .contact-form input, .contact.section .contact-form select, .contact.section .contact-form textarea { border-color: var(--line); background: var(--light); color: var(--ink); }
-.contact.section .contact-form select { appearance: none; padding-right: 52px; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='m1 1 5 5 5-5' fill='none' stroke='%23171715' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.8'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 20px center; background-size: 12px 8px; }
-.contact.section .contact-form input, .contact.section .contact-form select, .contact.section .contact-form textarea { font-family: inherit; font-size: 19px; font-weight: 400; line-height: 1.4; }
-.contact.section .contact-form input[type="file"] { padding: 8px 10px; }
-.contact.section .contact-form input[type="file"]::file-selector-button { margin-right: 12px; padding: 8px 12px; border: 1px solid var(--ink); border-radius: 7px; background: var(--light); color: var(--ink); font: inherit; font-size: 19px; line-height: 1.4; cursor: pointer; }
-.contact.section .contact-form input[type="file"]::file-selector-button { transition: background-color .18s ease, border-color .18s ease, color .18s ease; }
-.contact.section .contact-form input[type="file"]:hover::file-selector-button { border-color: var(--accent); background: var(--accent); color: var(--light); }
-.contact.section .contact-form input::placeholder, .contact.section .contact-form textarea::placeholder { color: var(--muted); }
-.contact.section .contact-form option { background: var(--bg); color: var(--ink); }
-.contact.section .contact-form input:focus, .contact.section .contact-form select:focus, .contact.section .contact-form textarea:focus { border-color: var(--ink); box-shadow: 0 0 0 2px rgba(23,23,21,.1); }
-.contact-form__optional { color: var(--muted); font-weight: 400; }
-.contact-form__files { display: grid; gap: 8px; }
-.contact-form__hint { margin: 0; color: var(--muted); font-size: 19px; line-height: 1.4; }
-.contact-form__file-list { display: grid; gap: 8px; margin: 4px 0 0; padding: 0; list-style: none; }
-.contact-form__file-list[hidden] { display: none; }
-.contact-form__file-list li { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--light); font-size: 19px; line-height: 1.4; }
-.contact-form__file-name { min-width: 0; overflow-wrap: anywhere; }
-.contact-form__file-remove { display: grid; flex: 0 0 auto; place-items: center; width: 36px; height: 36px; padding: 0; border: 1px solid var(--ink); border-radius: 50%; background: var(--light); color: var(--ink); font-family: inherit; font-size: 30px; font-weight: 400; line-height: 1; cursor: pointer; transition: background-color .18s ease, border-color .18s ease, color .18s ease; }
-.contact-form__file-remove:hover, .contact-form__file-remove:focus-visible { border-color: var(--accent); background: var(--accent); color: var(--light); }
-.contact.section .contact-form__submit { display: inline-flex; align-items: center; padding: 13px 20px; border: 1px solid var(--ink); background: var(--ink); color: var(--light); font-size: 18px; line-height: 24px; }
-.contact.section .contact__telegram, .contact.section .contact__email, .contact.section .contact-form__submit { transition: background-color .18s ease, border-color .18s ease, color .18s ease; }
-.contact.section .contact__telegram:hover, .contact.section .contact__telegram:focus-visible, .contact.section .contact__email:hover, .contact.section .contact__email:focus-visible, .contact.section .contact-form__submit:hover, .contact.section .contact-form__submit:focus-visible { border-color: var(--accent); background: var(--accent) !important; color: var(--light) !important; opacity: 1; }
+.contact__links--main { width: 264px; margin: 0; }
+.contact.section .contact__telegram, .contact.section .contact__email { transition: background-color .18s ease, border-color .18s ease, color .18s ease; }
+.contact.section .contact__telegram:hover, .contact.section .contact__telegram:focus-visible, .contact.section .contact__email:hover, .contact.section .contact__email:focus-visible { border-color: var(--accent); background: var(--accent) !important; color: var(--light) !important; opacity: 1; }
 .contact.section .contact__telegram:hover img, .contact.section .contact__telegram:focus-visible img, .contact.section .contact__email:hover img, .contact.section .contact__email:focus-visible img { filter: invert(1); }
 @media (max-width: 767px) {
   section[id] { scroll-margin-top: 124px; }
@@ -124,6 +93,5 @@ section[id] { scroll-margin-top: 86px; }
   .about p { font-size: 18px; }
   .contact__content { grid-template-columns: 1fr; gap: 44px; margin-top: 24px; }
   .contact__copy p { font-size: 18px; }
-  .contact-form label, .contact-form input, .contact-form select, .contact-form textarea, .contact.section .contact-form input[type="file"]::file-selector-button { font-size: 18px; }
-  .contact-form__hint, .contact-form__file-list li { font-size: 18px; }
+  .contact__links--main { width: min(264px, 100%); }
 }
